@@ -1,0 +1,21 @@
+##https://about.gitlab.com/downloads/#centos6
+
+ curl -sS https://packages.gitlab.com/install/repositories/gitlab/gitlab-ce/script.rpm.sh | sudo bash
+ yum install gitlab-ce
+ gitlab-ctl reconfigure
+ 
+ =====
+ 
+
+
+
+
+
+curl -sS https://packages.gitlab.com/install/repositories/gitlab/gitlab-ce/script.rpm.sh | sudo bash
+sudo yum install gitlab-ce
+
+vim /etc/gitlab/gitlab.rb
+external_url = 'gitlab.goll.com'
+
+gitlab-ctl reconfigure
+
